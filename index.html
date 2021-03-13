@@ -8,8 +8,6 @@
 </head>
 <body>
 
-	<h1>Funkce a události</h1>
-
 	<div class="ctverecek">Čtvereček</div>
 
 	<pre>Tady bude výsledek: <span id="vysledek"></span></pre>
@@ -18,15 +16,15 @@
 		Moje tlačítko
 	</button>
 
-	<div class="napoveda">
-		<h2>Zadání domácího úkolu</h2>
+	<button onclick="upravBarvu('.ctverecek')">
+		Uprav barvu čtverečku
+	</button>
 
-		<ul>
-			<li>Vytvořte tlačítko, při jehož stisknutí se změní barva <strong>Čtvereček</strong> na zelenou.</li>
-			<li>Upravte kód tak, aby se výsledek funkce <em>secti()</em> zobrazil v prvku s ID <strong>vysledek</strong> až po stiknutí nově přidaného tlačítka "Zobraz výsledek".</li>
-			<li>Uprav funkci <em>upozorni()</em> tak, aby se navíc vypisoval text i do konzole a také nahradil text v elementu <strong>Čtvereček</strong>.</li>
-		</ul>
-	</div>
+	<button onclick="zobrazVysledek(4, 5)">
+		Zobraz výsledek
+	</button>
+
+
 	
 	<script type="text/javascript" src="main.js"></script>
 </body>
